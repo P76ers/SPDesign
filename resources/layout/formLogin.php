@@ -44,12 +44,11 @@
                 </div>
 
                 <?php
-                echo '<pre>', var_dump($_SESSION), '</pre>';
-                echo '<pre>', var_dump($_POST), '</pre>';
-
+                // echo '<pre>', var_dump($_SESSION), '</pre>';
+                // echo '<pre>', var_dump($_POST), '</pre>';
+                
                 if (isset($_SESSION["login"]) == "falsches Passwort!") {
-                  echo "<b>Falsche Zugangsdaten eingegeben!</b>";
-
+                  echo "<b style='color: #FF565B'>Falsche Zugangsdaten eingegeben!</b>";
                 }
                 ?>
 

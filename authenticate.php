@@ -2,8 +2,8 @@
 session_start();
 $user["Susan"] = "pw1";
 
-echo '<pre>', var_dump($_SESSION), '</pre>';
-echo '<pre>', var_dump($_POST), '</pre>';
+// echo '<pre>', var_dump($_SESSION), '</pre>';
+// echo '<pre>', var_dump($_POST), '</pre>';
 
 if (
   isset($_POST["user"]) &&
