@@ -59,7 +59,7 @@ while ($zeile = mysqli_fetch_assoc($listeArtikelValues)) {
 
           <?= $arrArtikelHeader[3] ?>
         </th>
-        <th data-sortable="true" data-field="bilder" data-visible="false">
+        <th data-sortable="true" data-field="bilder">
           <?= $arrArtikelHeader[4] ?>
         </th>
       </tr>

@@ -25,15 +25,16 @@ if (isset($_SESSION["newUser"]) && $_SESSION["newUser"] == true) {
   $redirect = false;
   $timerShow = 2000;
   include($_SERVER['DOCUMENT_ROOT'] . "/SpDesign/resources/layout/modal.php");
-} else if (isset($_SESSION["show"]) && $_SESSION["show"] == true) {
-  unset($_SESSION["show"]);
-  $header = "Success";
-  $text = "Sie sind eingeloggt";
-  $class = "alert-success";
-  $redirect = false;
-  $timerShow = 2000;
-  include($_SERVER['DOCUMENT_ROOT'] . "/SpDesign/resources/layout/modal.php");
-}
+} else
+  if (isset($_SESSION["show"]) && $_SESSION["show"] == true) {
+    unset($_SESSION["show"]);
+    $header = "Success";
+    $text = "Sie sind eingeloggt";
+    $class = "alert-success";
+    $redirect = false;
+    $timerShow = 2000;
+    include($_SERVER['DOCUMENT_ROOT'] . "/SpDesign/resources/layout/modal.php");
+  }
 ?>
 
 <?php

@@ -4,7 +4,11 @@
 // echo '<pre>', var_dump($_POST), '</pre>';
 
 if (isset($_SESSION["login"]) && is_bool($_SESSION["login"])) {
-  $iframe = '';
+  $iframe = '          
+  <iframe <iframe
+  src="https://www.google.com/maps/embed?pb=!4v1704548521358!6m8!1m7!1sgkHIUjG5V_hBg6B7fWr3EQ!2m2!1d53.55310773670471!2d9.993314394261816!3f49.600707567048!4f-2.1924818786369826!5f1.0697609978093234"
+  width="100%" height="550px" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe>';
   $action = '/SpDesign/resources/database/authenticate.php';
   $formHeader = 'Vereinbare einen Termin';
   $signUpText = '';
@@ -13,7 +17,6 @@ if (isset($_SESSION["login"]) && is_bool($_SESSION["login"])) {
   $captcha = '';
   $btnText = "Anfrage senden";
 } else {
-  $iframe = '';
   $iframe = '          
   <iframe <iframe
   src="https://www.google.com/maps/embed?pb=!4v1704548521358!6m8!1m7!1sgkHIUjG5V_hBg6B7fWr3EQ!2m2!1d53.55310773670471!2d9.993314394261816!3f49.600707567048!4f-2.1924818786369826!5f1.0697609978093234"
